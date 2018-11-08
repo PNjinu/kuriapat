@@ -1,0 +1,12 @@
+dataclasses==0.6
+dj-database-url==0.5.0
+django==2.1rc1
+django-heroku==0.3.1
+djongo==1.2.30
+gunicorn==19.9.0
+Pillow==5.3.0
+psycopg2==2.7.5
+pymongo==3.7.1
+pytz==2018.5
+sqlparse==0.2.4
+whitenoise==4.1
