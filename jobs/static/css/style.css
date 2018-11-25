@@ -19,8 +19,19 @@
   font-size:22px;
 
 }
-
+#who{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#what{
+  padding-top:50px;
+  padding-botton:50px;
+  padding-right:50px;
+  padding-left:50px;
+  background-color: #EEEEEE;
+}
 #con{
+  padding-top:50px;
   padding-bottom:50px;
 }
 
@@ -31,4 +42,24 @@
 
 .navbar-brand{
     font-family: 'Satisfy', cursive;
+}
+.navbar-default{
+  width:100%;
+  z-index: 100;
+}
+.navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+
+.navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+.jumbotron{
+    margin-bottom: 0;
 }
