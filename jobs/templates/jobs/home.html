@@ -1,24 +1,7 @@
-<!doctype html>
-<html lang="en">
-{% load static%}
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
-
-    <title>Kuria Pat</title>
-
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" >
-    <!-- Custom styles for this template -->
-    <link href="{% static 'css/style.css' %}" rel="stylesheet">
-  </head>
-
-  <body>
+{% extends 'jobs/base.html' %}
+{% block content %}
+{% load static %}
     <main role="main">
-
       <section class="jumbotron text-center">
         <div class="container">
           <img src="{% static 'IMG_20171023_124222_068.jpg' %}" height="300">
@@ -44,36 +27,9 @@
               </div>
               </a>
             </div>
-              {% endfor %}
+            {% endfor %}
           </div>
         </div>
       </div>
     </main>
-
-    <footer>
-        <div class="row">
-          <div class="col-md-12">
-            <div id="above-footer">
-                <p>Written and coded with smiles and happiness by <a href="#con">Kuria Patrick</a></p>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div id="footer-below">
-              Kuria Pat ©
-              <script>
-                document.write(new Date().getFullYear());
-              </script>. All Rights Reversed
-            </div>
-          </div>
-        </div>
-    </footer>
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="{% static 'jquery-3.3.1.min.js' %}"></script>
-    <script src="{% static 'popper.min.js' %}" ></script>
-    <script src="{% static 'js/bootstrap.min.js' %}"></script>
-  </body>
-</html>
+{% endblock %}
