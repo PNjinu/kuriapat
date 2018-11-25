@@ -11,8 +11,8 @@
 
 #above-footer{
   background-color: #D6D6D6;
-  padding-top:50px;
-  padding-bottom:50px;
+  padding-top:20px;
+  padding-bottom:15px;
   color:dark-grey;
   text-align: center;
   font-family: Arvo;
@@ -62,4 +62,7 @@
   }
 .jumbotron{
     margin-bottom: 0;
+}
+#s-title{
+  padding-bottom:50px;
 }
