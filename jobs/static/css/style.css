@@ -1,0 +1,20 @@
+#footer-below{
+  background-color: #343436;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color:white;
+  text-align: center;
+  font-family:Arvo;
+  font-size:18px;
+
+}
+#above-footer{
+  background-color: #D6D6D6;
+  padding-top:50px;
+  padding-bottom:50px;
+  color:dark-grey;
+  text-align: center;
+  font-family: Arvo;
+  font-size:22px;
+
+}
