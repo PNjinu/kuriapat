@@ -8,6 +8,7 @@
   font-size:18px;
 
 }
+
 #above-footer{
   background-color: #D6D6D6;
   padding-top:50px;
@@ -17,4 +18,17 @@
   font-family: Arvo;
   font-size:22px;
 
+}
+
+#con{
+  padding-bottom:50px;
+}
+
+.contact-header{
+  padding-top:50px;
+  padding-bottom:25px;
+}
+
+.navbar-brand{
+    font-family: 'Satisfy', cursive;
 }
