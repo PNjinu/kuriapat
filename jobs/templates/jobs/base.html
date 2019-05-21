@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="google-site-verification" content="Ij77onf-IqJOsAtZLj2viGZUZZQQr_hmEw_kfuOT_48" />
-    <link rel="icon" href="../../../../favicon.ico">
+    <link rel="icon" href="{% static 'img/pat_cropped.ico' %}">
 
     <title>Kuria Pat | {% block title %}{% endblock %}</title>
 
@@ -24,7 +24,7 @@
   </head>
 
   <body data-spy="scroll">
-     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+     <!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">Kuria Pat</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -40,28 +40,23 @@
           <li class="nav-item"><a class="nav-link" href="#con">CONTACT</a></li>
         </ul>
     </div>
-    </nav>
+    </nav> -->
+    <div class="container">
+      <h4 class="brand">Kuria Patrick</h4>
+      <hr  style="height:3px; text-align:center;">
+    </div>
   {% block content %}
   {% endblock %}
   <footer>
-        <div class="row">
-          <div class="col-md-12">
-            <div id="above-footer">
-                <p>Written and coded with smiles and happiness by <a href="#con">Kuria Patrick</a></p>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div id="footer-below">
-              Kuria Pat ©
-              <script>
-                document.write(new Date().getFullYear());
-              </script>. All Rights Reversed
-            </div>
-          </div>
-        </div>
-    </footer>
-
-
+    <div id="footer-below">
+      Design inspired by <a href="https://www.makuno.me/" target="_blank">Makuno.me</a> 
+      <br>
+      Kuria Pat ©
+      <script>
+        document.write(new Date().getFullYear());
+      </script>. All Rights Reversed
+    </div>
+  </footer>
     <!-- Bootstrap core JavaScript
     ================================================== -->
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

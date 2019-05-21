@@ -1,22 +1,11 @@
 #footer-below{
-  background-color: #343436;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color:white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color:rgb(97, 97, 97);
   text-align: center;
-  font-family:Arvo;
-  font-size:18px;
-
-}
-
-#above-footer{
-  background-color: #D6D6D6;
-  padding-top:20px;
-  padding-bottom:15px;
-  color:dark-grey;
-  text-align: center;
-  font-family: Arvo;
-  font-size:22px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size:14px;
 
 }
 #who{
@@ -25,7 +14,7 @@
 }
 #what{
   padding-top:50px;
-  padding-botton:50px;
+  padding-bottom:50px;
   padding-right:50px;
   padding-left:50px;
   background-color: #EEEEEE;
@@ -39,29 +28,33 @@
   padding-top:50px;
   padding-bottom:25px;
 }
-
-.navbar-brand{
-    font-family: 'Satisfy', cursive;
+.brand {
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 20px;
+   text-transform: uppercase;
+   color: rgba(156, 152, 152, 0.897);
+   padding-top: 15px;
+   font-weight: bold;
+   text-align: center;
 }
-.navbar-default{
-  width:100%;
-  z-index: 100;
+.who {
+  text-align: center;
 }
-.navbar {
-      padding-top: 15px;
-      padding-bottom: 15px;
-      border: 0;
-      border-radius: 0;
-      margin-bottom: 0;
-      font-size: 12px;
-      letter-spacing: 5px;
-  }
-
-.navbar-nav  li a:hover {
-      color: #1abc9c !important;
-  }
-.jumbotron{
-    margin-bottom: 0;
+#avatar {
+  border-radius: 50%;
+}
+.name {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.skills {
+  padding-bottom: 30px;
+  text-align: center;
+}
+.description {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
 }
 #s-title{
   padding-bottom:50px;

@@ -5,136 +5,28 @@
  
     <main role="main">
       <!--who-->
-      <section class="jumbotron text-center">
-        <div id="who" class="container">
-          <img src="{% static 'img/IMG_20171023_124222_068.jpg' %}" height="300" alt="a black and white picture of kuria pat">
-          <h1 class="jumbotron-heading">Patrick Kuria</h1>
-          <p class="lead text-muted">Technically gifted with a substantial amount of obsession with technology.
-            Passionate about programming especially web development. Work best in teams because then you get to focus and give your all to a specific part.
-            Delivery is my one commandment and doing what is expected of me. My interpersonal and communication skills are top notch but I still work on them each day
-            because I believe that we can always improve. I also have a passion in design and art.  </p>
-          <p>
-            <a href="#con" class="btn btn-primary my-2 btn-lg"><strong>Hire Me</strong></a>
-          </p>
-        </div>
-      </section>
-      <!--what-->
-      <section id="what">
-      <div class="album py-5 bg-light">
+      <section class="who">
         <div class="container">
-          <div class="text-center" id="s-title">
-            <h1>My Work</h1>
+          <img id="avatar" src="{% static 'img/930956.jpg' %}" height="175" alt="a pic of pat">
+          <h1 class="name">Patrick Kuria</h1>
+          <div class="skills">
+            <span class="badge badge-primary">Oracle DBA</span>
+            <span class="badge badge-primary">Full-stack Developer</span>
+            <span class="badge badge-primary">Software Engineer</span>
           </div>
-          <div class="row">
-            {% for job in jobs.all %}
-            <div class="col-md-4">
-              <a href="{% url 'detail' job.id %}">
-              <div class="card mb-4 shadow-sm">
-                <img class="card-img-top" src="{{ job.image.url }}">
-                <div class="card-body">
-                  <p class="card-text">{{ job.summary }}</p>
-                </div>
+          <div class="description">
+            <div class="row">
+              <div class="offset-md-2 col-md-8">
+                <p>I am a technology enthusiast from the number one continent called Africa. I specialize in Applications Development.
+                Currently am working as a DBA intern at <a href="https://sybyl.com/" target="_blank">Sybyl</a> in Nairobi, Kenya.</p>
+                <p>I have skills in Python(Django and Flask) and Javascript. I am also an <a href="https://www.youracclaim.com/badges/1e0f6ed1-edb9-43ec-9792-7baeb31c15d1/linked_in_profile" target="_blank">Oracle Certified
+                Associate (OCA)</a>, currently working to be an Oracle Certified Professional (OCP).</p>
+                <p>
+                <p>You can find my <a href="https://drive.google.com/open?id=1W3PFaY7walUginzRB7Jgunwbu6BJp9tH" target="_blank">Curriculum Vitae(CV) here</a></p>
               </div>
-              </a>
             </div>
-            {% endfor %}
           </div>
         </div>
-      </div>
       </section>
-      <!--what-->
-      <!--THIRD CONTAINER-->
-      <div id="con">
-      <div class="container">
-        <div class="row">
-        <div class="col-lg-12">
-          <div class="contact-header text-center">
-            <h1>Contact Me</h1>
-          </div>
-        </div>
-      </div>
-      <!--row-->
-      <div class="contact-content">
-        <div class="row">
-          <div class="col-md-4">
-            <form class="form-horizontal">
-              <fieldset>
-                <!-- Form Name -->
-                <legend>Talk to Me</legend>
-                 <div class="form-group">
-                   <div class="input-group mb-2">
-                     <div class="input-group-prepend">
-                       <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
-                     </div>
-                     <input type="text" class="form-control" name="first_name" placeholder="First Name" required>
-                   </div>
-                 </div>
-                <div class="form-group">
-                   <div class="input-group mb-2">
-                     <div class="input-group-prepend">
-                       <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
-                     </div>
-                     <input type="text" class="form-control" name="last_name" placeholder="Last Name" required>
-                   </div>
-                </div>
-                <div class="form-group">
-                  <div class="input-group mb-2">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text"><i class="fa fa-envelope text-info"></i></div>
-                    </div>
-                    <input type="email" class="form-control" name="email" placeholder="Email Address" required>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class="input-group mb-2">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text"><i class="fa fa-comment text-info"></i></div>
-                    </div>
-                    <textarea class="form-control" placeholder="Message" required></textarea>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class="text-center">
-                    <input type="submit" value="Send" class="btn btn-info btn-block rounded-0 py-2">
-                  </div>
-                </div>
-              </fieldset>
-            </form>
-          </div>
-          <div class="col-md-4">
-            <fieldset>
-              <legend>Social Media Links</legend>
-              <ul class="list-group">
-                <li class="list-group-item">
-                  <a href="https://www.facebook.com/kuriapat" target='_blank' class="btn btn-primary btn-block"><i class="fab fa-facebook"></i> <span class="network-name">Facebook</span></a>
-                </li>
-                <li class="list-group-item">
-                  <a href="https://twitter.com/Kuria144" target='_blank' class="btn btn-info btn-block"><i class="fab fa-twitter"></i> <span class="network-name">Twitter</span></a>
-                </li>
-                <li class="list-group-item">
-                  <a href="https://www.linkedin.com/in/patrick-kuria-676588b8/" target='_blank' class="btn btn-primary btn-block"><i class="fab fa-linkedin"></i> <span class="network-name">LinkedIn</span></a>
-                </li>
-                <li class="list-group-item">
-                  <a href="https://github.com/PNjinu" target="_blank" class="btn btn-success btn-block"><i class="fab fa-github"></i> <span class="network-name">Github</span></a>
-                </li>
-              </ul>
-            </fieldset>
-          </div>
-          <div class="col-md-4">
-            <fieldset>
-              <legend>Know Me</legend>
-              <p>I live and breath web development. I lose track of time when am coding for the web and I rarely get bored. I value exercise and I hope you do to.
-                I play fortnite and NBA more than I should. I still love TV shows and occasionally go for movies.
-                Apart from coding I love art and photography, speaking of which,
-                <a href="https://www.instagram.com/kuria144/" target='_blank'>follow me on instagram.<span class="fab fa-instagram"></span></a></p>
-            </fieldset>
-          </div>
-        </div>
-        <!--row-->
-      </div>
-      <!--contact-content-->
-    </div>
-    <!--container -->
-      </div>
     </main>
 {% endblock %}
