@@ -86,10 +86,10 @@ DATABASES = dict(default={
     'PORT': '5432',
 }, OPTIONS={
     'ENGINE': 'django.db.backends.postgresql',
-    'NAME': 'd4q12jkt9s6bj3',
-    'USER': 'tsrgsskindlknf',
-    'PASSWORD': 'aac70b610f56ce383369425fb1098dcc15dc048dfc8c3f031e00d47ff365f8f3',
-    'HOST': 'ec2-54-83-27-162.compute-1.amazonaws.com',
+    'NAME': os.getenv('PORT_NAME'),
+    'USER':  os.getenv('PORT_USER'),
+    'PASSWORD': os.getenv('PORT_PASSWORD'),
+    'HOST': os.getenv('PORT_HOST'),
     'PORT': '5432',
 })
 
