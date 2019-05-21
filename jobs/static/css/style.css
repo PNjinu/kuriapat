@@ -1,6 +1,6 @@
 #footer-below{
-  position: absolute;
-  bottom: 0;
+  position: relative;
+  padding-top: 100px;
   width: 100%;
   color:rgb(97, 97, 97);
   text-align: center;
